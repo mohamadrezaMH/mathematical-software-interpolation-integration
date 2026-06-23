@@ -27,6 +27,23 @@ print(poly_expr)
 # ------------------------
 spline = CubicSpline(x, y)
 
+print("\nCubic Spline Piecewise Equations:\n")
+
+for i in range(len(spline.c.T)):
+    a, b, c, d = spline.c[:, i]
+
+    print(f"Interval [{x[i]}, {x[i+1]}]")
+
+    print(
+        f"S{i}(x) = "
+        f"{a:.6f}(x-{x[i]})^3 + "
+        f"{b:.6f}(x-{x[i]})^2 + "
+        f"{c:.6f}(x-{x[i]}) + "
+        f"{d:.6f}"
+    )
+
+    print()
+
 x_new = np.linspace(1, 6, 500)
 
 plt.figure(figsize=(10,6))
