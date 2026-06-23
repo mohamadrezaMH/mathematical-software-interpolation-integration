@@ -48,7 +48,7 @@ The project computes:
 
 ### Generated Figure
 
-* ![Interpolation Plot](./Project%20Report/interpolation.png)
+* ![Interpolation Plot](./Figures/interpolation.png)
 
 ---
 
@@ -58,9 +58,9 @@ The project reads execution times of three algorithms from an Excel file and aut
 
 ### Generated Charts
 
-* `bar_chart.png`
-* `line_chart.png`
-* `box_plot.png`
+* ![](./Figures/bar_chart.png)
+* ![](./Figures/line_chart.png)
+* ![](./Figures/box_plot.png)
 
 ### Features
 
@@ -75,15 +75,15 @@ The project reads execution times of three algorithms from an Excel file and aut
 
 The following function is evaluated:
 
-[
+$$
 f(x)=e^{x^2}
-]
+$$
 
 on the interval:
 
-[
+$$
 [0,1]
-]
+$$
 
 ### Methods Used
 
