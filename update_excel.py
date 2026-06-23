@@ -1,9 +1,11 @@
 import pandas as pd
 
-df = pd.read_excel("پروژه 3.xlsx")
+file_name = "پروژه 3.xlsx"
+
+df = pd.read_excel(file_name)
 
 new_row = pd.DataFrame({
-    "Data size": ["700KB"],
+    " Run time for different data size": ["700KB"],
     "Alg.1": [80],
     "Alg.2": [320],
     "Alg.3": [700]
@@ -11,6 +13,6 @@ new_row = pd.DataFrame({
 
 df = pd.concat([df, new_row], ignore_index=True)
 
-df.to_excel("updated_data.xlsx", index=False)
+df.to_excel(file_name, index=False)
 
 print(df)
