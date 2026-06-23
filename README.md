@@ -48,7 +48,7 @@ The project computes:
 
 ### Generated Figure
 
-* `interpolation.png`
+* ![Interpolation Plot](./Project%20Report/interpolation.png)
 
 ---
 
